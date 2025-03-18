@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "sendgrid/sendgrid": "^8.0",
+        "ovh/ovh": "^3.0"
+    }
+} 

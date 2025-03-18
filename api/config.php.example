@@ -1,0 +1,47 @@
+<?php
+// Configuration de la base de données
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'gestion');
+define('DB_USER', 'root');
+define('DB_PASS', 'votre_mot_de_passe');
+define('DB_PORT', '3306');
+define('DB_SOCKET', '/var/run/mysqld/mysqld.sock');
+
+// Configuration du mode debug
+define('DEBUG_MODE', false);
+define('DEBUG_LOG_FILE', __DIR__ . '/../logs/debug.log');
+
+// Configuration de l'application
+define('APP_NAME', 'Gestion des Commandes');
+define('APP_URL', 'https://votre-domaine.com/gestion_commandes');
+define('APP_VERSION', '1.0.0');
+
+// Configuration des sessions
+define('SESSION_LIFETIME', 3600); // 1 heure
+define('SESSION_PATH', '/');
+define('SESSION_SECURE', true);
+define('SESSION_HTTPONLY', true);
+
+// Clé secrète pour les sessions et le hachage
+define('APP_SECRET', 'CHANGEZ_CETTE_CLE_PAR_UNE_VALEUR_ALEATOIRE');
+
+// Configuration des uploads
+define('UPLOAD_DIR', __DIR__ . '/../uploads/');
+define('MAX_UPLOAD_SIZE', 5 * 1024 * 1024); // 5 MB
+
+// Configuration des emails
+define('EMAIL_FROM', 'votre-email@domaine.com');
+define('EMAIL_FROM_NAME', 'Nom de votre application');
+define('SENDGRID_API_KEY', 'votre_cle_api_sendgrid');
+
+// Types MIME autorisés pour les uploads
+define('ALLOWED_MIME_TYPES', [
+    'image/jpeg',
+    'image/png',
+    'image/gif',
+    'application/pdf'
+]);
+
+// Configuration de sécurité
+define('CSRF_TOKEN_NAME', 'csrf_token');
+define('PASSWORD_MIN_LENGTH', 8); 
