@@ -44,7 +44,7 @@ if (DEBUG_MODE) {
 
 // Configuration de l'application
 define('APP_NAME', 'Gestion des Commandes');
-define('APP_URL', 'https://chambre27-serveur.com/gestion_commandes');
+define('APP_URL', '');
 define('APP_VERSION', '1.0.0');
 
 // Configuration des sessions
@@ -88,7 +88,7 @@ define('REPORTS_FORMATS', ['pdf', 'csv', 'html']);
 // Configuration SendGrid
 define('EMAIL_FROM', 'contact@chambre27.com');
 define('EMAIL_FROM_NAME', 'Chambre 27 - Gestion des Commandes');
-define('SENDGRID_API_KEY', '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');
+define('SENDGRID_API_KEY', '');
 
 // Création des répertoires nécessaires s'ils n'existent pas
 if (!is_dir(UPLOAD_DIR)) {
